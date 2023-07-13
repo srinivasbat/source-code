@@ -6,8 +6,8 @@ pipeline {
   stages {
     stage('Deploy') {
       steps {
-        sh 'cp -r assets /var/www/html/'
-        sh 'cp -r images /var/www/html/'
+        sh 'cp -r assets/. /var/www/html/'
+        sh 'cp -r images/. /var/www/html/'
         sh 'cp index.html /var/www/html/'
       }
     }
