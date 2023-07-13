@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Deploy') {
       steps {
-        sh 'unzip html5up-dimension.zip -d /var/www/html/'
+        //sh 'unzip html5up-dimension.zip -d /var/www/html/'
       }
     }
     
