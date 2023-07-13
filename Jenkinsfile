@@ -12,10 +12,10 @@ pipeline {
     
     stage('Deploy') {
       steps {
-        sh 'rm -rf /var/www/html/*'
-        sh 'cp -r image/*.png /var/www/html/'
+        sh 'cp -r images/*.png /var/www/html/'
+        sh 'cp -r images/*.jpg /var/www/html/'
+        sh 'cp -r css/*.css /var/www/html/'
         sh 'cp index.html /var/www/html/'
-        sh 'cp style.css /var/www/html/'
       }
     }
     
