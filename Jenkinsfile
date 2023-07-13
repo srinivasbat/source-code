@@ -16,6 +16,9 @@ pipeline {
         sh 'cp -r /root/workspace/sourcecode/images/*.png /var/www/html/'
         sh 'cp -r /root/workspace/sourcecode/images/*.jpg /var/www/html/'
         sh 'cp -r /root/workspace/sourcecode/index.html  /var/www/html/'
+        sh 'cp -r /root/workspace/sourcecode/assets/fonts/* /var/www/html/fonts/'
+        sh 'cp -r /root/workspace/sourcecode/assets/js*  /var/www/html/js/'
+        sh 'cp -r /root/workspace/sourcecode/assets/sass*  /var/www/html/sass/'
       }
     }
     
