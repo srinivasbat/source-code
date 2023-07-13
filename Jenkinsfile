@@ -4,15 +4,9 @@ pipeline {
   }
   
   stages {
-    stage('Clone') {
-      steps {
-        git branch: 'master', url: 'https://github.com/srinivasbat/source-code.git'
-      }
-    }
-    
     stage('Deploy') {
       steps {
-        sh 'cp -r * /var/www/html/'
+        sh 'unzip html5up-dimension.zip -d /var/www/html/'
       }
     }
     
