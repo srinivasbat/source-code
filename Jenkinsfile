@@ -12,16 +12,7 @@ pipeline {
     
     stage('Deploy') {
       steps {
-        sh 'cp -r /root/workspace/sourcecode/assets/css/*.css /var/www/html/'
-        sh 'cp -r /root/workspace/sourcecode/images/*.png /var/www/html/'
-        sh 'cp -r /root/workspace/sourcecode/images/*.jpg /var/www/html/'
-        sh 'cp -r /root/workspace/sourcecode/index.html  /var/www/html/'
-        sh 'mkdir -p /var/www/html/fonts'
-        sh 'cp -r /root/workspace/sourcecode/assets/fonts/* /var/www/html/fonts/'
-        sh 'mkdir -p /var/www/html/js'
-        sh 'cp -r /root/workspace/sourcecode/assets/js/*  /var/www/html/js/'
-        sh 'mkdir -p /var/www/html/sass'
-        sh 'cp -r /root/workspace/sourcecode/assets/sass/*  /var/www/html/sass/'
+        sh 'cp -r * /var/www/html/'
       }
     }
     
