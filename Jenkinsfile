@@ -12,10 +12,10 @@ pipeline {
     
     stage('Deploy') {
       steps {
-        sh 'cp -r images/*.png /var/www/html/'
-        sh 'cp -r images/*.jpg /var/www/html/'
-        sh 'cp -r css/*.css /var/www/html/'
-        sh 'cp index.html /var/www/html/'
+        sh 'cp -r /root/workspace/sourcecode/assets/css/*.css /var/www/html/'
+        sh 'cp -r /root/workspace/sourcecode/images/*.png /var/www/html/'
+        sh 'cp -r /root/workspace/sourcecode/images/*.jpg /var/www/html/'
+        sh 'cp -r /root/workspace/sourcecode/index.html  /var/www/html/'
       }
     }
     
